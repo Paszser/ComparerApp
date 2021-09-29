@@ -4,8 +4,6 @@
 ### Idea Inicial
 Comparador de precios de videojuegos en diferentes tiendas web. Los precios se actualizarán de forma diaria teniendo en cuenta los diversos cambios que se pueden producir en sus correspondientes sitios web en diversos momentos (en el momento en el que se detecte los cambios), así como tratar de predecir tanto el precio, como el momento en el que se producirá la rebaja teniendo en cuenta datos estadísticos pasados. Este análisis se realizará sobre una gama de videojuegos bastante alta, siendo aquellos que se encuentran disponibles en las tiendas web de mayor referencia, independientemente de la antigüedad, el precio, importancia o género.
 
-A su vez se incorpora una sección en el que las tendencias de videojuegos son resaltados así como novedades (véase lanzamientos, juegos en auge, tendencias...). Se podrán buscar dichos títulos por diversas características e incluso resaltarlos para que cada usuario esté al tanto.
-
 
 ## Objetivo 1
 ### Motivación
