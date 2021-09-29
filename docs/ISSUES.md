@@ -2,14 +2,14 @@
 
 ## Tipos de usuario
 
--Cliente, persona interesada en usar los servicios de la aplicación para buscar información de los títulos en los que está interesado.
--Visualizador, usuario que simplemente hace uso de la aplicación para obtener información general de los título sin ánimo de compra.
+-Cliente, persona interesada en usar los servicios de la aplicación para buscar información de los títulos en los que está interesado y va a realizar una compra usando como vía la aplicación.
+-Visualizador/Usuario, usuario que simplemente hace uso de la aplicación para obtener información general de los título, sin tener en principio, ánimo de compra, pero pudiendo ser un potencial cliente.
 
 ## Issues
 Se realizará la descripción de los diversos Issues que se plantean en el proyecto.
 
-[HU1](https://github.com/Paszser/IV/issues/3) - Clasificación según el características del videojuego: Como visualizador me gustaría poder buscar las ofertas de videojuegos filtrándolos por el género, consola o categoría al que pertenecen.
+[HU1](https://github.com/Paszser/IV/issues/3) - Comparador de precios: Como usuario me resultaría ordenado y eficaz poder tener una selección de diversos precios en diversas tiendas web para así, en un momento dado, poder elegir para comprar el sitio con una mejor oferta.
 
-[HU2](https://github.com/Paszser/IV/issues/4) - Predicción de rebajas: Como cliente sin ingresos estables, me gustaría saber con cierta antelación que videojuegos pueden recibir una rebaja para poder ahorrar lo máximo posible.
+[HU2](https://github.com/Paszser/IV/issues/4) - Predicción de rebajas: Como cliente sin ingresos estables, me gustaría saber con cierta antelación que videojuegos pueden recibir una rebaja para poder ahorrar lo máximo posible, pues mi saldo es limitado y busco encontrar el mejor momento para ahorrar lo máximo posible. A su vez me gustaría tener acceso a la predicción de todos los juegos disponibles para tener un abanico más amplio para así también poder elegir en función del precio aunque un juego no me interese en un principio.
 
-[HU3](https://github.com/Paszser/IV/issues/6) - Búsqueda de título: Como cliente me gustaría poder tener la opción de guardar ciertos títulos de alguna forma y hacer un seguimiento de actualizaciones de información de los mismos.
+[HU3](https://github.com/Paszser/IV/issues/7) - Estar al tanto de cambios importantes: Como visualizador, me interesa estar al tanto de cualquier tipo de cambio que se produzca en la información de los títulos que tengo guardados como favoritos y los que busco en un momento determinado para así ser consciente de la información más veraz a tiempo real.
