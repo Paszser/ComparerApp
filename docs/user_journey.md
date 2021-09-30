@@ -1,4 +1,4 @@
-# User Jouney
+# User Journey
 
 ## Viaje del usuario a través del uso de la aplicación desde la necesidad.
 
