@@ -10,8 +10,19 @@ En un principio un usuario tiene la necesidad de conocer el mejor lugar en el qu
 
 3. Dentro de la ficha de cada título, habrá una opción en la que se podrá realizar una predicción orientativa del precio en caso de buscar, no solo el mejor precio, sino el mejor momento para realizar la compra.
 
+---------------------------------------------------------------------------------------
+
 -Comparador -> Tendrá la posibilidad de una vez dentro de la aplicación, buscar el título en cuestión y de esa forma ver en tiempo real el precio en ese momento del videojuego.
 
 -Al tanto de actualizaciones -> En todo momento podrá usar la aplicación para estar al tanto de los cambios de información básicos de las características del juego que busca, estando los mismos actualizados con regularidad.
 
 -Predicción -> Se tratará de realizar una predicción del momento de la próxima rebaja y del porcentaje de la misma teniendo en cuenta datos históricos tratando de ayudar y orientar al usuario que trate de usar la funcionalidad.
+
+---------------------------------------------------------------------------------------
+
+## Ejemplo de uso
+
+* El usuario elige un título y lo dirige a su ficha.
+* Posibilidad de remarcar el título como de interés y aparecer remarcado en una lista del propio usuario.
+* Se le muestran las características del mismo (título, género, desarrollador...), una tabla con los distintos precios ordenador de "mejor a peor"
+* Aparece una opción para realizar la predicción de rebajas próximas y porcentaje, a razón del usuario para obtenerlo o no.
