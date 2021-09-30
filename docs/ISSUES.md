@@ -3,6 +3,7 @@
 ## Tipos de usuario
 
 -Cliente, persona interesada en usar los servicios de la aplicación para buscar información de los títulos en los que está interesado y va a realizar una compra usando como vía la aplicación.
+
 -Visualizador/Usuario, usuario que simplemente hace uso de la aplicación para obtener información general de los título, sin tener en principio, ánimo de compra, pero pudiendo ser un potencial cliente.
 
 ## Issues
