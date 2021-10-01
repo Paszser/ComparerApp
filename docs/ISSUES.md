@@ -13,7 +13,7 @@ Se realizará la descripción de los diversos Issues que se plantean en el proye
 
 [HU2](https://github.com/Paszser/IV/issues/4) - Predicción de rebajas: Como cliente sin ingresos estables, necesitaría saber con cierta antelación que videojuegos pueden recibir una rebaja para poder ahorrar lo máximo posible, pues mi saldo es limitado y busco encontrar el mejor momento para ahorrar lo máximo posible. A su vez me gustaría tener acceso a la predicción de todos los juegos disponibles para tener un abanico más amplio y así también poder elegir en función del precio aunque un juego no me interese en un principio.
 
-[HU3](https://github.com/Paszser/IV/issues/7) - Estar al tanto de cambios importantes: Como visualizador, me interesa estar al tanto de cualquier tipo de cambio que se produzca en la información de los títulos que tengo guardados como favoritos y los que busco en un momento determinado para así ser consciente de la información más veraz a tiempo real.
+[HU3](https://github.com/Paszser/IV/issues/7) - Estar al tanto de cambios importantes: Como visualizador, dado que me interesa estar al tanto de cualquier tipo de cambio que se produzca en la información de los títulos que tengo guardados como favoritos y los que busco en un momento determinado para así ser consciente de la información más veraz a tiempo real, necesito que la información de cada uno esté actualizada cada vez que la consulto.
 
 | Orden           | Milestone                                           | Descripción                                                            |
 | ----------------|---------------------------------------------------- | --------------------------------------------------------------------- |
