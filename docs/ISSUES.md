@@ -15,9 +15,14 @@ Se realizará la descripción de los diversos Issues que se plantean en el proye
 
 [HU3](https://github.com/Paszser/IV/issues/7) - Estar al tanto de cambios importantes: Como visualizador, dado que me interesa estar al tanto de cualquier tipo de cambio que se produzca en la información de los títulos que tengo guardados como favoritos y los que busco en un momento determinado para así ser consciente de la información más veraz a tiempo real, necesito que la información de cada uno esté actualizada cada vez que la consulto.
 
+## Milestones
+
 | Orden           | Milestone                                           | Descripción                                                            |
 | ----------------|---------------------------------------------------- | --------------------------------------------------------------------- |
-| 1º | [Módulo de almacenamiento de información y despliegue de precios.](https://github.com/Paszser/IV/milestone/1) | Presenta la información de un juego y los diversos precios a los que está disponible. |
-| 2º | [Funcionalidad de actualización de cambios.](https://github.com/Paszser/IV/milestone/3) | Mantiene actualizada la información así como los precios con su posible cambio durante el tiempo. |
-| 3º | [Sistema de análisis](https://github.com/Paszser/IV/milestone/2) | Se podrá obtener una predicción de los precios de los títulos que se desee. |
+| 1º | [Diseño de clases principales](https://github.com/Paszser/ComparerApp/milestone/4) | Se realiza el diseño de las clases principales de la lógica detrás de la aplicación. |
+| 2º | [Módulo de almacenamiento de información y despliegue de precios.](https://github.com/Paszser/IV/milestone/1) | Presenta la información de un juego y los diversos precios a los que está disponible. |
+| 3º | [Funcionalidad de actualización de cambios.](https://github.com/Paszser/IV/milestone/3) | Mantiene actualizada la información así como los precios con su posible cambio durante el tiempo. |
+| 4º | [Sistema de análisis](https://github.com/Paszser/IV/milestone/2) | Se podrá obtener una predicción de los precios de los títulos que se desee. |
+
+
 
