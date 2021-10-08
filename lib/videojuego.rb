@@ -1,15 +1,13 @@
 module ComparerApp
     class Videojuego
     
-        attr_accessor :nombre, :genero, :precio, :desarrollador, :rebajas, :plataformas, :portada, :valoracion, :f_salida, :idiomas, :tiendas_disponibles, :precio
+        attr_accessor :nombre, :genero, :desarrollador, :plataformas, :portada, :valoracion, :f_salida, :idiomas, :tiendas_disponibles
         
         # Constructor 
-        def initialize(nombre, genero, precio, desarrollador, rebajas, plataformas, portada, valoracion, f_salida, idiomas, tiendas_disponibles)
+        def initialize(nombre, genero, desarrollador, plataformas, portada, valoracion, f_salida, idiomas, tiendas_disponibles)
             @nombre = nombre
             @genero = genero
-            @precio = precio
             @desarrollador = desarrollador
-            @rebajas = rebajas
             @plataformas = plataformas
             @portada = portada
             @valoracion = valoracion
