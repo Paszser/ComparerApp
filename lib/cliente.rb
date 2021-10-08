@@ -18,7 +18,7 @@ module ComparerApp
             @lista_comprados.push(juego)
         end
 
-        # Método para añadir un juego deseado a la lista de deseos
+        # Método para añadir un juego deseado a la lista de deseos (videojeugos gustados)
         def aniadir_deseo(juego)
             @lista_deseos.push(juego)
         end
