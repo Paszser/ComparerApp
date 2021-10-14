@@ -1,27 +1,29 @@
+require 'date'
+
 module ComparerApp
+    ##
+    # Esta clase representa la información asociada a un cliente
+
     class Cliente
 
-        attr_accessor :nombre, :edad, :f_registro, :generos_gustados, :lista_comprados, :lista_deseos
+        attr_reader :nombre, :f_nac, :f_registro
+        attr_accessor :generos_gustados, :lista_comprados, :lista_deseos
 
-        # Constructor
-        def initialize(nombre, edad, f_registro, generos_gustados)
+        ##
+        # Crea un nuevo cliente con las siguientes propiedades
+        # 
+        # Parámetros:
+        # +nombre+:: nombre y apellidos del usuario
+        # +f_nac+:: fecha de nacimiento del usuario
+        # +generos_gustados+:: generos gustadps por el usuario (accion, accion-aventura, aventura, carreras, cartas, deportes, educativos, estrategia, 
+        #                      guerra, logica, lucha, preguntas, concursos, rol, terror, simulacion,realidad_aumentada)
+        def initialize(nombre, f_nac, generos_gustados)
             @nombre = nombre
-            @edad = edad
-            @f_regsitro = f_registro
+            @f_nac = f_nac
+            @f_registro = DateTime.now
             @generos_gustados = generos_gustados
-            @lista_comprados = Array.new    # Videojuegos
-            @lista_deseos = Array.new       # Videojuegos
+            @lista_comprados = Array.new    
+            @lista_deseos = Array.new       
         end
-
-        # Método para añadir un juego comprado a la lista de comprados
-        def comprar_juego(juego)
-            @lista_comprados.push(juego)
-        end
-
-        # Método para añadir un juego deseado a la lista de deseos (videojeugos gustados)
-        def aniadir_deseo(juego)
-            @lista_deseos.push(juego)
-        end
-
     end
 end
