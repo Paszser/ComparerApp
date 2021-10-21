@@ -15,6 +15,45 @@ Se tiene acceso a la documentación del proyecto en [este enlace.](https://githu
 
 ## Automatizacion de testeo 📋
 
-###Instalacion y tests
-...
+### Instalación y tests
+Para el desarrollo de estas comprobaciones, va a ser necesario poseer en nuestra máquina, y así poder ejecutar, comandos pertenecientes a 'rake', 'ruby' y 'gem'.
 
+Primeramente, comprobaremos si tenemos los comandos mencionados anteriormente instalados:
+
+```shell
+rake --version
+gem --version
+ruby --version
+
+```
+
+Y procedemos a instalar aquel que no tengamos en nuestro PC:
+
+```shell
+sudo apt-get install ruby-full
+sudo apt install gem
+gem install rake
+```
+
+Tras tener todas las herramientas de las que disponemos, podremos comenzar a hacer uso de las tareas creadas para la automatización y las comprobaciones que se requieren:
+
+### Instalación de las dependencias 
+Se instalarán las dependencias necesarias en el proyecto con:
+
+```shell
+rake installdeps
+```
+
+### Realización de los test pertinentes
+Se realizarán los test con:
+
+```shell
+rake test
+```
+
+### Comprobación de la sintaxis
+Se realizarán comprobaciones de la sintaxis de los ficheros del proyecto con:
+
+```shell
+rake check
+```
