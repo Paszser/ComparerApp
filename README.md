@@ -13,5 +13,8 @@ Se tiene acceso a la documentación del proyecto en [este enlace.](https://githu
 * En el archivo [Issues](https://github.com/Paszser/ComparerApp/blob/main/docs/ISSUES.md) se describen los tipos de usuario así como las historias de los mismos que derivan en la creación de los milestones para conseguir esas funcionalidades.
 * En el archivo [User Journey](https://github.com/Paszser/ComparerApp/tree/main/docs) se realiza el ejemplo del recorrido del usuario al hacer uso de la aplicación funcional.
 
+## Automatizacion de testeo 📋
 
+###Instalacion y tests
+...
 
