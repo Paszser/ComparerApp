@@ -1,2 +1,5 @@
 lenguaje: ruby
 entidad: lib/videojuego.rb
+automatizar:
+  fichero: Rakefile
+  orden: Rake
