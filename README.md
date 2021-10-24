@@ -52,12 +52,12 @@ Tras tener todas las herramientas de las que disponemos, podremos comenzar a hac
 Se realizarán los test con:
 
 ```shell
-rake test
+Rake test
 ```
 
 ### Comprobación de la sintaxis
 Se realizarán comprobaciones de la sintaxis de los ficheros del proyecto con:
 
 ```shell
-rake check
+Rake check
 ```
