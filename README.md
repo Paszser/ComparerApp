@@ -36,7 +36,7 @@ rvm install ruby
 rvm --default use ruby
 ```
 
-En caso de necesitar gem:
+En caso de necesitar rails:
 ```shell
 rvm gem install --version '3.0.3' rails
 ```
@@ -52,12 +52,12 @@ Tras tener todas las herramientas de las que disponemos, podremos comenzar a hac
 Se realizarán los test con:
 
 ```shell
-Rake test
+rake test
 ```
 
 ### Comprobación de la sintaxis
 Se realizarán comprobaciones de la sintaxis de los ficheros del proyecto con:
 
 ```shell
-Rake check
+rake check
 ```

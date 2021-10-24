@@ -10,7 +10,7 @@ task :test do
 end
 
 desc "Task para revisar la sintaxis de los archivos del proyecto,"
-task :test do
-    puts "Realozando comprobaciones de sintaxis..."
+task :check do
+    puts "Realizando comprobaciones de sintaxis..."
     exec "ruby -c ./lib/*"
 end
