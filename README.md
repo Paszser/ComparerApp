@@ -29,16 +29,11 @@ ruby --version
 
 Primeramente y para facilitar la administración de la instalación de lo que se necesita de Ryby, recomendamos seguir las pautas que se indican en la página oficial: [RVM](https://rvm.io/rvm/install)
 
-Procedemos a instalar aquel que no tengamos en nuestro PC. En caso de necesitar la última versión de Ruby:
+Procedemos a instalar aquel que no tengamos en nuestro PC. En caso de necesitar la última versión de Ruby usaremos el siguiente comando. Con este comando se incluye la instalación de gem si no se tuviera en la máquina:
 
 ```shell
 rvm install ruby
 rvm --default use ruby
-```
-
-En caso de necesitar rails:
-```shell
-rvm gem install --version '3.0.3' rails
 ```
 
 Y para el uso de rake:
