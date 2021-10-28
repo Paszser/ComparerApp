@@ -6,7 +6,7 @@ module ComparerApp
 
     class Cliente
 
-        attr_reader :nombre, :f_nac, :f_registro
+        attr_reader :nombre, :f_registro
         attr_accessor :generos_gustados, :lista_comprados, :lista_deseos
 
         ##
@@ -19,7 +19,6 @@ module ComparerApp
         #                      guerra, logica, lucha, preguntas, concursos, rol, terror, simulacion,realidad_aumentada)
         def initialize(nombre, f_nac, generos_gustados)
             @nombre = nombre
-            @f_nac = f_nac
             @f_registro = DateTime.now
             @generos_gustados = generos_gustados
             @lista_comprados = Array.new    
