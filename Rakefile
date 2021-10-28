@@ -1,7 +1,7 @@
 desc "Task que instala las dependencias pertinentes,"
 task :installdeps do
     puts "Instalando las dependencias..."
-    exec ""
+    exec "bundle install"
 end
 
 desc "Task para lanzar la aplicación y cerciorarnos de su funcionamiento,"

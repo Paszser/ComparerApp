@@ -36,10 +36,17 @@ rvm install ruby
 rvm --default use ruby
 ```
 
-Y para el uso de rake:
+Para manejar e instalar algunas dependencias, haremos uso de un manejador para ello, conocido como bundler y el cual instalaremos en nuestra máquina:
 ```shell
-gem install rake
+gem install bundler
 ```
+
+Así obtendremos un manejador que nos ayudará a instalar las dependencias precisas para el proyecto, el cual culminará cuando ejecutemos (el cual incluye rake), especificado en el archivo Gemfile:
+```shell
+rake installdeps
+```
+
+Tras este comando se generará un archivo "Gemfile.lock" el cual recoge las versiones instaladas mediando el comando de las dependencias.
 
 Tras tener todas las herramientas de las que disponemos, podremos comenzar a hacer uso de las tareas creadas para la automatización y las comprobaciones que se requieren:
 
