@@ -63,3 +63,5 @@ Se realizarán comprobaciones de la sintaxis de los ficheros del proyecto con:
 ```shell
 rake check
 ```
+
+## Tests
