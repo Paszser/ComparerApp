@@ -32,7 +32,6 @@ module ComparerApp
         def get_lista_precios()
             precios_videojuego = self.precios_videojuego
             precios_videojuego = precios_videojuego.sort_by{|tienda, precio| precio}.to_h
-
             return precios_videojuego
         end
     end
