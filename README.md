@@ -77,6 +77,7 @@ En caso negativo, procederemos a ejecutar el siguiente comando, (tras la inclusi
 bundle binstubs rspec-core
 ```
 Este comando instala rspec y crea un ejecutable de nombre *rspec* en nuestro directorio *./bin/*. Así no será necesario ejecutar continuamente el comando *bundle exec rspec* cuando queramos hacer uso de la herramienta, y solo nos será necesario acceder a *./bin/rspec*
+
 El comando que muchos tutoriales recomiendan es directamente hacer uso de:
 
 ```shell
@@ -92,3 +93,9 @@ bin/rspec --init
 ```
 
 Con el cual generaremos el directorio *./spec* con el archivo *spec_helper.rb* en su interior y que contendrá diversas utilidades en su interior de cara a nuestras pruebas, como por ejemplo, la configuración. Y además nos creará un archivo de nombre *.rspec*.
+
+Finalemente como en momentos previos usamos Rake para automatizar el pryecto. Podremos hacer uso del siguiente comando para testear nuestro código:
+
+```shell
+rake test
+```
