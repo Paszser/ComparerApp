@@ -16,7 +16,7 @@ describe 'Videojuego' do
         
         lista.each do |(llave, valor)|
             if index < (lista.length-1) 
-                expect(valor).to be <= all_keys[index+1]
+                expect(valor).to be <= all_values[index+1]
             end
             index += 1
         end
