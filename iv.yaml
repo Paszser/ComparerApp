@@ -3,4 +3,4 @@ entidad: lib/videojuego.rb
 automatizar:
   fichero: Rakefile
   orden: rake
-test: spec/videojuego_spec.rb
+test: spec/tienda_web_spec.rb
