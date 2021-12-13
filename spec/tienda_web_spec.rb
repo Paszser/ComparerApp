@@ -10,21 +10,21 @@ require 'tienda_web'
 
 describe 'Prediccion' do
     it 'devuelve la prediccion de la próxima época de rebajas' do
-        @fechas_rebajas = {
-            "Black Friday" => Date.parse('2021-11-27'),
-            "Navidad" => Date.parse('2022-01-09'),
-            "PreVerano" => Date.parse('2022-05-22') 
-        }
+        @black_friday = Time.parse('2022-11-25')
+        @navidad = Time.parse('2022-12-24')
+        @fecha_rebajas = [Time.parse('2021-09-05'), Time.parse('2021-04-15'), Time.parse('2020-09-25'), Time.parse('2020-04-19'),
+                          Time.parse('2019-08-31'), Time.parse('2019-05-07'), Time.parse('2018-10-03'), Time.parse('2018-03-29')]
 
         tienda = ComparerApp::TiendaWeb.new(ComparerApp)
-        predicted = tienda.prediccion(@fechas_rebajas)
-        date_predicted = Date.parse(predicted.values.to_s)
-        today = Date.today
-    
-        @fechas_rebajas.each do |(llave, valor)|
-            if(valor > today)
-                expect(date_predicted).to be_between(today, valor)
+        predicted_date = tienda.prediccion(@fecha_rebajas)
+        
+        for fecha in predicted_date
+            if fecha.month <= 6
+                expect(fecha.month).to be_between(4,5)
+            else
+                expect(fecha.month).to be_between(9,10)
             end
         end
     end
 end
+
