@@ -19,11 +19,11 @@ module ComparerApp
                 @nombre = nombre
             end
             
-            # Realiza una predicción de la próxima época de rebajas aproximada a partir del día que se realiza dicha consulta.
+            # Realiza una predicción de la próxima época de rebajas aproximada a partir de datos previos.
             # 
-            # * Las fechas pasadas respecto a la actual se desechan.
-            # * Se ordenan las fechas por comodidad de trabajo
-            # * Entre las que se consideran aptas, se devuelve la más cercana al día presente.
+            # * Las fechas pasadas se igualan al mismo año para la correcta realización de la media.
+            # * Se separan según las dos épocas pertinentes, antes y después del verano.
+            # * Se obtiene la media de ambas y se devuelven.
             
             def prediccion(fechas_rebajas)
                 

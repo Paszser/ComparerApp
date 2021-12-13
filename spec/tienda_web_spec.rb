@@ -4,9 +4,9 @@ require 'tienda_web'
 #
 # * Comenzamos a partir de cualquier dato Hash, en este caso una variable, o un json.
 # * Se llama al método que predice la fecha.
-# * Se comprueba y espera que la fecha predecida se encuentre entre el día presente y todas las fechas próximas dentro del hash,
-#   lo que significa que es la más cercana a "today"
-# * Se obvian las fechas anteriores al día presente.
+# * Se comprueba y espera que la fecha predecida se encuentre en los meses de Abril/Mayo para las fechas pre-verano,
+#   y los entre los meses de Septiembre/Octubre para la época post-verano.
+
 
 describe 'Prediccion' do
     it 'devuelve la prediccion de la próxima época de rebajas' do
