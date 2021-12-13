@@ -34,7 +34,7 @@ module ComparerApp
                 media_pre_verano = 0
                 
                 for fecha in fechas_rebajas do
-                    fecha = Time.new(2022, fecha.month, fecha.day)
+                    fecha = Time.new(Time.now.year, fecha.month, fecha.day)
                     if fecha.month <= 6
                         media_pre_verano += fecha.to_f
                         contador_pre_verano += 1
