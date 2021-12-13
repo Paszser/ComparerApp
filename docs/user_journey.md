@@ -8,7 +8,7 @@ En un principio un usuario tiene la necesidad de conocer el mejor lugar en el qu
 
 2. Al comenzar a hacer uso de la aplicación, se podrá realizar la búsqueda por el nombre del videojuego mostrando consecuentemente la información del mismo así como los diversos precios con un enlace a la tienda web en cuestión en la que se vende.
 
-3. Dentro de la ficha de cada título, habrá una opción en la que se podrá realizar una predicción orientativa del precio. En caso de buscar, no solo el mejor precio, sino el mejor momento para realizar la compra.
+3. Dentro de la ficha de cada título, habrá una opción en la que se podrá realizar una predicción orientativa del precio. En caso de buscar, no solo el mejor precio, sino el mejor momento para realizar la compra. Se realizará de tal forma que ciertas fechas épocas fijas de rebajas serán inamovibles y se podrán realizar predicciones seguras. En otras épocas, se realizará una predicción realizando una media estadística para aproximar así la fecha en la que posiblemente se realizarán las rebajas.
 
 ---------------------------------------------------------------------------------------
 
