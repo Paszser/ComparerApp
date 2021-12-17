@@ -14,9 +14,15 @@ module ComparerApp
             # Crea una nueva tienda web con las siguientes propiedades
             # 
             # Parámetros:
-            # +nombre+:: nombre de la tienda web            
-            def initialize(nombre)
+            # +nombre+:: nombre de la tienda web 
+            # +fechas_rebajas+:: fechas de rebajas históricas a partir de las cuales realizar una predicción 
+            # +black_friday+:: fecha del próximo Black Friday 
+            # +navidad+:: fecha del comienzo de la próxima Navidad      
+            def initialize(nombre, fechas_rebajas, black_friday, navidad)
                 @nombre = nombre
+                @fechas_rebajas = fechas_rebajas
+                @black_friday = black_friday
+                @navidad = navidad
             end
             
             # Realiza una predicción de la próxima época de rebajas aproximada a partir de datos previos.
@@ -25,7 +31,7 @@ module ComparerApp
             # * Se separan según las dos épocas pertinentes, antes y después del verano.
             # * Se obtiene la media de ambas y se devuelven.
             
-            def prediccion(fechas_rebajas)
+            def prediccion()
                 
                 predic = []
                 contador_pre_verano = 0
@@ -33,7 +39,7 @@ module ComparerApp
                 media_post_verano = 0
                 media_pre_verano = 0
                 
-                for fecha in fechas_rebajas do
+                for fecha in @fechas_rebajas do
                     fecha = Time.new(Time.now.year, fecha.month, fecha.day)
                     if fecha.month <= 6
                         media_pre_verano += fecha.to_f

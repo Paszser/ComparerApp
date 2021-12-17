@@ -15,8 +15,8 @@ describe 'Prediccion' do
         @fecha_rebajas = [Time.parse('2021-09-05'), Time.parse('2021-04-15'), Time.parse('2020-09-25'), Time.parse('2020-04-19'),
                           Time.parse('2019-08-31'), Time.parse('2019-05-07'), Time.parse('2018-10-03'), Time.parse('2018-03-29')]
 
-        tienda = ComparerApp::TiendaWeb.new(ComparerApp)
-        predicted_date = tienda.prediccion(@fecha_rebajas)
+        tienda = ComparerApp::TiendaWeb.new(ComparerApp, @fecha_rebajas, @black_friday, @navidad)
+        predicted_date = tienda.prediccion()
         
         for fecha in predicted_date
             if fecha.month <= 6
