@@ -86,15 +86,15 @@ bundle install --binstubs
 
 Pero muchos expertos lo consideran como obsoleto en contraposición al comando que hemos optado por usar, el cual es más recomendado.
 
-Finalemente, usaremos el comando:
+Seguidamente, usaremos el comando:
 
 ```shell
 bin/rspec --init
 ```
 
-Con el cual generaremos el directorio *./spec* con el archivo *spec_helper.rb* en su interior y que contendrá diversas utilidades en su interior de cara a nuestras pruebas, como por ejemplo, la configuración. Y además nos creará un archivo de nombre *.rspec*.
+Con el cual generaremos el directorio *./spec* con el archivo *spec_helper.rb* en su interior y que contendrá diversas utilidades en él de cara a nuestras pruebas, como por ejemplo, la configuración. Y además nos creará un archivo de nombre *.rspec*.
 
-Finalemente como en momentos previos usamos Rake para automatizar el pryecto. Podremos hacer uso del siguiente comando para testear nuestro código:
+Finalmente como en momentos previos usamos Rake para automatizar el proyecto. Podremos hacer uso del siguiente comando para testear nuestro código:
 
 ```shell
 rake test
