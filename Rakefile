@@ -6,7 +6,7 @@ end
 
 desc "Task para lanzar la aplicación y cerciorarnos de su funcionamiento,"
 task :test do
-    puts "Realizando los test pertinentes..."
+    exec "bin/rspec"
 end
 
 desc "Task para revisar la sintaxis de los archivos del proyecto,"

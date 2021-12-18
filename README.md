@@ -63,3 +63,39 @@ Se realizarán comprobaciones de la sintaxis de los ficheros del proyecto con:
 ```shell
 rake check
 ```
+
+## Tests
+Para la realización de pruebas de nuestro código, haremos uso de la herramienta RSpec. Primeramente, comprobaremos si la poseemos:
+
+```shell
+rspec --version
+```
+
+En caso negativo, procederemos a ejecutar el siguiente comando, (tras la inclusión en el Gemfile de la gema correspondiente a RSpec):
+
+```shell
+bundle binstubs rspec-core
+```
+Este comando instala rspec y crea un ejecutable de nombre *rspec* en nuestro directorio *./bin/*. Así no será necesario ejecutar continuamente el comando *bundle exec rspec* cuando queramos hacer uso de la herramienta, y solo nos será necesario acceder a *./bin/rspec*
+
+El comando que muchos tutoriales recomiendan es directamente hacer uso de:
+
+```shell
+bundle install --binstubs
+```
+
+Pero muchos expertos lo consideran como obsoleto en contraposición al comando que hemos optado por usar, el cual es más recomendado.
+
+Seguidamente, usaremos el comando:
+
+```shell
+bin/rspec --init
+```
+
+Con el cual generaremos el directorio *./spec* con el archivo *spec_helper.rb* en su interior y que contendrá diversas utilidades en él de cara a nuestras pruebas, como por ejemplo, la configuración. Y además nos creará un archivo de nombre *.rspec*.
+
+Finalmente como en momentos previos usamos Rake para automatizar el proyecto. Podremos hacer uso del siguiente comando para testear nuestro código:
+
+```shell
+rake test
+```
