@@ -99,3 +99,5 @@ Finalmente como en momentos previos usamos Rake para automatizar el proyecto. Po
 ```shell
 rake test
 ```
+## Docker
+
