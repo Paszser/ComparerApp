@@ -127,6 +127,6 @@ Dicho token se ha añadido como secreto de nuestro repositorio como token de acc
 
 Para la automatización de esto, hemos creado un archivo .yml: *.github/workflows/dockerhub.yml* en el que hemos añadido las diferentes opciones y configuraciones de nuestro interés.
 
-Indicamos la activación del archivo cuando se encía a la main brach del repositorio, especificando posteriormente lo que queremos que ocurra en el workflow.
+Indicamos la activación del archivo cuando se envía a la main brach del repositorio, especificando posteriormente lo que queremos que ocurra en el workflow. También indicamos que se active con el push al main o un pull request a la rama main.
 
 Añadimos en general todo aquello que nos parezca conveniente, tanto lo explicado en clase como lo que se indica [aquí](http://jj.github.io/IV/documentos/proyecto/5.Docker) incluyendo la ejecución de la orden para testear el contenedor que se facilita.
