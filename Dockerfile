@@ -2,7 +2,7 @@ FROM ruby:3.1.0-alpine
 
 LABEL maintainer "Daniel Ballesteros <dbpaszser@correo.ugr.es>"
 
-ENV PROJECT_DIR=/test
+ENV PROJECT_DIR=/app/test
 
 ENV HOME_DIR=/home/usuariostandar/
 
