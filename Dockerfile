@@ -24,4 +24,4 @@ RUN rm ${HOME_DIR}Gemfile && rm ${HOME_DIR}Gemfile.lock
 
 WORKDIR $PROJECT_DIR
 
-RUN echo "Host geoserver"
+CMD ["rake", "test"]
