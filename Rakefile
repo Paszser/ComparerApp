@@ -1,3 +1,4 @@
+require 'rspec/core/rake_task'
 desc "Task que instala las dependencias pertinentes,"
 task :installdeps do
     puts "Instalando las dependencias..."
@@ -5,8 +6,8 @@ task :installdeps do
 end
 
 desc "Task para lanzar la aplicación y cerciorarnos de su funcionamiento,"
-task :test do
-    exec "bin/rspec"
+RSpec::Core::RakeTask.new(:test) do |t|
+    t.pattern = "spec/*_spec.rb"
 end
 
 desc "Task para revisar la sintaxis de los archivos del proyecto,"
