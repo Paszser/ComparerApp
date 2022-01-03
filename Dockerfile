@@ -6,9 +6,8 @@ ENV PROJECT_DIR=/app/test
 
 ENV HOME_DIR=/home/usuariostandar/
 
-RUN adduser -D usuariostandar
-
-RUN chown usuariostandar $GEM_HOME && chmod 751 $GEM_HOME
+RUN adduser -D usuariostandar \
+    && chown usuariostandar $GEM_HOME && chmod 751 $GEM_HOME
 
 USER usuariostandar
 
@@ -18,10 +17,9 @@ COPY Gemfile.lock $HOME_DIR
 
 WORKDIR $HOME_DIR
 
-RUN bundle install
-
-RUN rm ${HOME_DIR}Gemfile && rm ${HOME_DIR}Gemfile.lock
+RUN bundle install \
+    && rm ${HOME_DIR}Gemfile && rm ${HOME_DIR}Gemfile.lock
 
 WORKDIR $PROJECT_DIR
 
-CMD ["rake", "test"]
+ENTRYPOINT ["rake", "test"]
