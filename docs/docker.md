@@ -52,3 +52,13 @@ Varias son las opciones que se presentan ante nosotros a la hora de hacer elecci
 ## Elección
 
 Ante todas las opciones presentadas, en nuestro caso haremos uso de Docker para los contenedores del proyecto. Como hemos podido observar, cumple con creces los requisitos mínimos que hemos impuesto, y a pesar de la existencia de otras opciones, lo extendido y famoso que es nuestra elección la dota de las cualidades para ser nuestra elegida.
+
+## Imagen base para el contenedor
+
+En busca de la mejor optimización del contenedor, procederemos a realizar una pequeña investigación para ver cuál es la imagen base con la que menos tiempo necesitamos para la ejecución, y escoger así la más rápida. Que requiera de un menor tiempo para su construcción también implica una menor complicación en la construcción del Dockerfile y el uso de menos dependencias:
+
+- *ruby:3.1.0-alpine* -> Finished in 0.01998 seconds (files took 0.19726 seconds to load) & 34MB
+- *ruby:3.1.0-bullseye* -> Finished in 0.01799 seconds (files took 0.20261 seconds to load) & 330MB
+- *ruby:3.1.0-slim* -> Finished in 0.01879 seconds (files took 0.19961 seconds to load) & 71MB
+
+Teniendo en cuenta algunos datos tomados ejecutando en nuestro equipo, haremos uso de la imagen proporcionada por alpine para la realización de este Objetivo.
