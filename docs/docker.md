@@ -61,4 +61,22 @@ En busca de la mejor optimización del contenedor, procederemos a realizar una p
 - *ruby:3.1.0-bullseye* -> Finished in 0.01799 seconds (files took 0.20261 seconds to load) & 330MB
 - *ruby:3.1.0-slim* -> Finished in 0.01879 seconds (files took 0.19961 seconds to load) & 71MB
 
-Teniendo en cuenta algunos datos tomados ejecutando en nuestro equipo, haremos uso de la imagen proporcionada por alpine para la realización de este Objetivo.
+Teniendo en cuenta algunos datos tomados ejecutando en nuestro equipo, haremos uso de la imagen proporcionada por alpine para la realización de este Objetivo. Las razones principales vienen de la mano de la menos memoria usada así como el tiempo de ejecución. En imágenes como las proporcionadas por bullsye o slim las dependencias, y así como los paquetes son mayores y de ahí la mayor cantidad de memoria que porta.
+
+## Dockerfile
+
+En la creación de contenedores para el despliegue futuro de nuestra aplicación, vamos a hacer uso de Docker. Primeramente, hemos indagado [aquí](https://hub.docker.com/_/ruby) para la versión de ruby a utilizar en nuestro Dockerfile como imagen.
+
+Tras incluir algunos metadatos de información, hemos proseguido aplicando buenas metodologías y prácticas para la creación del Dockerfile, creando variables de entorno tanto para el directorio de trabajo donde se ejecutarán los tests como para el directorio home del user sin privilegios que vamos a añadir.
+
+Después de añadir al susodicho usuario, damos privilegios de usuario a nuestro GEM_HOME, el cual es /usr/local/bundle, y cambiamos a dicho usuario. Copiaremos tanto el Gemfile, como el Gemfile.lock al home del user e instalamos las dependencias que se incluyen en el Gemfile, borrando los ficheros de dependencias generados y que no nos serán de provecho. 
+
+Finalmente cambiamos al directorio de trabajo para ejecuat los tests con el task runner que poseemos y ejecutamos en la terminal el comando con el que se procesan los tests que hemos programado.
+
+## Dockerhub.yml
+
+Para la automatización de esto, hemos creado un archivo .yml: *.github/workflows/dockerhub.yml* en el que hemos añadido las diferentes opciones y configuraciones de nuestro interés.
+
+Indicamos la activación del archivo cuando se envía a la main brach del repositorio, especificando posteriormente lo que queremos que ocurra en el workflow. También indicamos que se active con el push al main o un pull request a la rama main.
+
+Añadimos en general todo aquello que nos parezca conveniente, tanto lo explicado en clase como lo que se indica [aquí](http://jj.github.io/IV/documentos/proyecto/5.Docker) incluyendo la ejecución de la orden para testear el contenedor que se facilita.

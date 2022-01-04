@@ -101,21 +101,11 @@ rake test
 ```
 ## Docker
 
-### Dockerfile
-
-En la creación de contenedores para el despliegue futuro de nuestra aplicación, vamos a hacer uso de Docker. Vamos a aplicar los conocimientos adquiridos en las clases de la asignatura así como en las prácticas de asignaturas paralelas y colindantes a ésta.
-
-Primeramente, hemos indagado [aquí](https://hub.docker.com/_/ruby) para la versión de ruby a utilizar en nuestro Dockerfile como imagen.
-
-Tras incluir algunos metadatos de información, hemos proseguido aplicando buenas metodologías y prácticas para la creación del Dockerfile, creando variables de entorno tanto para el directorio de trabajo donde se ejecutarán los tests como para el directorio home del user sin privilegios que vamos a añadir.
-
-Después de añadir al susodicho usuario, damos privilegios de usuario a nuestro GEM_HOME, el cual es /usr/local/bundle, y cambiamos a dicho usuario. Copiaremos tanto el Gemfile, como el Gemfile.lock al home del user e instalamos las dependencias que se incluyen en el Gemfile, borrando los ficheros de dependencias generados y que no nos serán de provecho. 
-
-Finalmente cambiamos al directorio de trabajo para ejecuat los tests con el task runner que poseemos y ejecutamos en la terminal el comando con el que se procesan los tests que hemos programado.
-
 ### Dockerhub
 
 A su vez haremos uso de Dockerhub, el registro de repositorios facilitado por Docker para extraer y enviar las imágenes, y para lo que hemos tenido que seguir una serie de pasos para su set up.
+
+Aquí podemos encontrar el [enlace](https://hub.docker.com/repository/docker/paszser/comparerapp) al Dockerhub en el que se encuentra el proyecto, al cual se le puede hacer pull.
 
 #### Preparación
 
@@ -123,10 +113,4 @@ Tras crear nuestra cuenta en Dockerhub y crear nuestro repositorio de nombre igu
 
 Dicho token se ha añadido como secreto de nuestro repositorio como token de acceso, que en consonancia al token de nuestro usuario de dockerhub, serán los dos secretos enlazados a nuestro repositorio de GitHub.
 
-#### Dockerhub.yml
-
-Para la automatización de esto, hemos creado un archivo .yml: *.github/workflows/dockerhub.yml* en el que hemos añadido las diferentes opciones y configuraciones de nuestro interés.
-
-Indicamos la activación del archivo cuando se envía a la main brach del repositorio, especificando posteriormente lo que queremos que ocurra en el workflow. También indicamos que se active con el push al main o un pull request a la rama main.
-
-Añadimos en general todo aquello que nos parezca conveniente, tanto lo explicado en clase como lo que se indica [aquí](http://jj.github.io/IV/documentos/proyecto/5.Docker) incluyendo la ejecución de la orden para testear el contenedor que se facilita.
+Podemos encontrar [aquí](docs/docker.md) una visión más amplia de algunos conceptos en relación a los contenedores.
