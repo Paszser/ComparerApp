@@ -6,7 +6,7 @@ ENV PROJECT_DIR=/app/test
 
 ENV HOME_DIR=/home/userstandard/
 
-RUN addgroup -D userstandard
+RUN adduser -D userstandard
 
 RUN chown userstandard $GEM_HOME && chmod 751 $GEM_HOME
 
