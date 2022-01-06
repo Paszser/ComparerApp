@@ -8,7 +8,7 @@ ENV HOME_DIR=/home/userstandard/
 
 RUN useradd --system userstandard
 
-RUN chown userstandard $GEM_HOME && chmod 751 $GEM_HOME
+RUN chown userstandard $HOME_DIR && chmod 751 $HOME_DIR
 
 USER userstandard
 
