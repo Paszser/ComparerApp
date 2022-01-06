@@ -4,9 +4,11 @@ on:
   push:
     branches:
       - main
+      - Objetivo5
   pull_request:
     branches:
       - main
+      - Objetivo5
 
 jobs:
   build:
