@@ -6,7 +6,13 @@ on:
       - Dockerfile
       - Gemfile
     branches:
-      - '*'
+      - main
+  pull_request:
+    paths:
+      - Gemfile
+      - Dockerfile
+    branches:
+      - main
 
 jobs:
   build:
