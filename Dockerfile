@@ -7,7 +7,7 @@ ENV PROJECT_DIR=/app/test
 ENV HOME_DIR=/home/usuariostandard/
 
 RUN adduser -D usuariostandard \
-    && chown usuariostandard $HOME_DIR && chmod 751 $HOME_DIR
+    && chown usuariostandard $GEM_HOME && chmod 751 $GEM_HOME
 
 USER usuariostandard
 
@@ -19,6 +19,8 @@ WORKDIR $HOME_DIR
 
 RUN bundle install \
     && rm ${HOME_DIR}Gemfile && rm ${HOME_DIR}Gemfile.lock
+
+RUN ruby -e "-p ENV"
 
 WORKDIR $PROJECT_DIR
 
