@@ -1,4 +1,4 @@
-FROM ruby:3.1.0-slim
+FROM ruby:3.1.0-alpine
 
 LABEL maintainer "Daniel Ballesteros <dbpaszser@correo.ugr.es>"
 
@@ -6,9 +6,9 @@ ENV PROJECT_DIR=/app/test
 
 ENV HOME_DIR=/home/userstandard/
 
-RUN useradd --system userstandard
+RUN adduser -D userstandard
 
-RUN chown userstandard $HOME_DIR && chmod 751 $HOME_DIR
+RUN chown userstandard $GEM_HOME && chmod 751 $GEM_HOME
 
 USER userstandard
 
