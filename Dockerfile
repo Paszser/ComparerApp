@@ -21,8 +21,6 @@ WORKDIR $HOME_DIR
 RUN bundle install \
 && rm ${HOME_DIR}Gemfile && rm ${HOME_DIR}Gemfile.lock
 
-RUN ruby -e "-p ENV"
-
 WORKDIR $PROJECT_DIR
 
 ENTRYPOINT ["rake", "test"]
