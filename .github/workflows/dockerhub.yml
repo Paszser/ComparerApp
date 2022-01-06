@@ -2,11 +2,17 @@ name: Publish Docker Image in Docker Hub
 
 on:
   push:
+    paths:
+      - Dockerfile
+      - Gemfile
     branches:
-      - main
+      - '*'
   pull_request:
+    paths:
+      - Dockerfile
+      - Gemfile
     branches:
-      - main
+      - '*'
 
 jobs:
   build:
