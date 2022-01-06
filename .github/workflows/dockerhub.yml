@@ -7,11 +7,6 @@ on:
       - Gemfile
     branches:
       - '*'
-  pull_request:
-    paths:
-      - Gemfile
-    branches:
-      - '*'
 
 jobs:
   build:
