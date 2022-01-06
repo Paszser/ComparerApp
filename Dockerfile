@@ -4,13 +4,13 @@ LABEL maintainer "Daniel Ballesteros <dbpaszser@correo.ugr.es>"
 
 ENV PROJECT_DIR=/app/test
 
-ENV HOME_DIR=/home/usuariostandard/
+ENV HOME_DIR=/home/standarduser/
 
-RUN adduser -D usuariostandard
+RUN adduser -D standarduser
 
-RUN chown usuariostandard $GEM_HOME && chmod 751 $GEM_HOME
+RUN chown standarduser $GEM_HOME && chmod 751 $GEM_HOME
 
-USER usuariostandard
+USER standarduser
 
 COPY Gemfile $HOME_DIR
 
