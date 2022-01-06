@@ -6,7 +6,7 @@ ENV PROJECT_DIR=/app/test
 
 ENV HOME_DIR=/home/userstandard/
 
-RUN useradd --defaults userstandard
+RUN useradd --system userstandard
 
 RUN chown userstandard $GEM_HOME && chmod 751 $GEM_HOME
 
