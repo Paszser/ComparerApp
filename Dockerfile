@@ -1,4 +1,4 @@
-FROM ruby:3.1.0-alpine
+FROM ruby:3.1.0-slim
 
 LABEL maintainer "Daniel Ballesteros <dbpaszser@correo.ugr.es>"
 
