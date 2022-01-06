@@ -18,7 +18,7 @@ COPY Gemfile.lock $HOME_DIR
 WORKDIR $HOME_DIR
 
 RUN bundle install \
-    && rm ${HOME_DIR}Gemfile && rm ${HOME_DIR}Gemfile.lock
+&& rm ${HOME_DIR}Gemfile && rm ${HOME_DIR}Gemfile.lock
 
 RUN ruby -e "-p ENV"
 
