@@ -4,9 +4,11 @@ LABEL maintainer "Daniel Ballesteros <dbpaszser@correo.ugr.es>"
 
 ENV PROJECT_DIR=/app/test
 
-ENV HOME_DIR=/home/userstandard/
+ENV HOME_DIR=/home/userstandard
 
 RUN adduser -D userstandard
+
+RUN export GEM_HOME=/home/usuarioestandar/bundle
 
 RUN chown userstandard $GEM_HOME && chmod 751 $GEM_HOME
 

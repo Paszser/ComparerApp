@@ -5,14 +5,10 @@ on:
     paths:
       - Dockerfile
       - Gemfile
-    branches:
-      - '*'
   pull_request:
     paths:
       - Gemfile
       - Dockerfile
-    branches:
-      - '*'
 
 jobs:
   build:
