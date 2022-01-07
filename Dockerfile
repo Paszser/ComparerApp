@@ -8,7 +8,7 @@ ENV HOME_DIR=/home/userstandard
 
 RUN adduser -D userstandard
 
-RUN export GEM_HOME=/home/usuarioestandar/bundle
+RUN export GEM_HOME=/home/usuarioestandar/bundle/
 
 RUN chown userstandard $GEM_HOME && chmod 751 $GEM_HOME
 
