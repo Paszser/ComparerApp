@@ -8,7 +8,7 @@ ENV HOME_DIR=/home/userstandard
 
 RUN adduser -D userstandard
 
-RUN export GEM_HOME=/home/usuarioestandar/bundle/
+RUN export GEM_HOME=/home/usuarioestandar/bundle
 
 RUN chown userstandard $GEM_HOME && chmod 751 $GEM_HOME
 
@@ -21,7 +21,7 @@ COPY Gemfile.lock $HOME_DIR
 WORKDIR $HOME_DIR
 
 RUN bundle install \
-&& rm ${HOME_DIR}Gemfile && rm ${HOME_DIR}Gemfile.lock
+&& rm ${HOME_DIR}/Gemfile && rm ${HOME_DIR}/Gemfile.lock
 
 WORKDIR $PROJECT_DIR
 
