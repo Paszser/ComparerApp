@@ -1,0 +1,17 @@
+version: 2
+
+jobs:
+  test-app:
+    docker:
+      - image: paszser/comparerapp:latest
+    steps:
+      - checkout
+      - run:
+          name: "Task para app test"
+          command: "rake test"
+
+workflows:
+  version: 2
+  test-app-workflow:
+    jobs:
+      - test-app 
