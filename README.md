@@ -115,4 +115,6 @@ Dicho token se ha añadido como secreto de nuestro repositorio como token de acc
 
 Podemos encontrar [aquí](docs/docker.md) una visión más amplia de algunos conceptos en relación a los contenedores.
 
-## Objetivo 6
+## Sistemas de Integración Continua
+
+La información referente a las herramientas usadas las podemos encontrar a partir de [aquí](docs/CI.md), a partir de la cual podremos encontrar el resto de documentación relacionada.
