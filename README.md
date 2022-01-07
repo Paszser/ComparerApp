@@ -99,3 +99,18 @@ Finalmente como en momentos previos usamos Rake para automatizar el proyecto. Po
 ```shell
 rake test
 ```
+## Docker
+
+### Dockerhub
+
+A su vez haremos uso de Dockerhub, el registro de repositorios facilitado por Docker para extraer y enviar las imágenes, y para lo que hemos tenido que seguir una serie de pasos para su set up.
+
+Aquí podemos encontrar el [enlace](https://hub.docker.com/repository/docker/paszser/comparerapp) al Dockerhub en el que se encuentra el proyecto, al cual se le puede hacer pull.
+
+#### Preparación
+
+Tras crear nuestra cuenta en Dockerhub y crear nuestro repositorio de nombre igual al de nuestro proyecto, hemos accedido al apartado de seguridad en la configuración del perfil para general un token de seguridad.
+
+Dicho token se ha añadido como secreto de nuestro repositorio como token de acceso, que en consonancia al token de nuestro usuario de dockerhub, serán los dos secretos enlazados a nuestro repositorio de GitHub.
+
+Podemos encontrar [aquí](docs/docker.md) una visión más amplia de algunos conceptos en relación a los contenedores.
