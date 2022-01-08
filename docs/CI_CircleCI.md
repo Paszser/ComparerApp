@@ -14,7 +14,7 @@ Para preparar todo lo relacionado con la herramiento, hemos seguido la documenta
 
 ## Ventajas
 
-La elección de CircleCI como uno de nuestros CI no es casualidad. Su sencillez para enlazarlo con nuestro repositorio de Github o la capacidad que tenemos de configurarlo como mejor nos convenga son razones de peso para ello. En este caso hemos usado la versión 2 del mismo debido a recomendaciones presentes en la documentación a pesar de la existencia de nuevas versiones, asegurándonos así de una compatibilidad completa de detalles como pueden ser la imagen del docker.
+La elección de CircleCI como uno de nuestros CI no es casualidad. Su sencillez para enlazarlo con nuestro repositorio de Github o la capacidad que tenemos de configurarlo como mejor nos convenga son razones de peso para ello. En este caso hemos usado la versión 2 del mismo debido a recomendaciones presentes en la documentación a pesar de la existencia de nuevas versiones, asegurándonos así de una compatibilidad completa de detalles como pueden ser la imagen del docker. Otra razón es la facilidad que nos presenta esta herramienta para implementar los checks que igualmente se requieren para pasar el Objetivo. Este aspecto se comentará más adelante en profundidad.
 
 ## Uso y funcionamiento
 
