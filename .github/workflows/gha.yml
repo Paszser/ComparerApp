@@ -6,16 +6,19 @@ jobs:
     strategy:
       matrix:
         rubyv: ['3.1.0', '3.0.3']
-  - name: Tests Ruby
+    name: Tests Ruby
     runs-on: ubuntu-latest
     steps:
     - name: Checkout 
       uses: actions/checkout@v2
+
     - name: Set up Ruby
       uses: ruby/setup-ruby@477b21f02be01bcb8030d50f37cfec92bfa615b6
       with:
         ruby-version: ${{ matrix.rubyv }}
+
     - name: Install dependencies
       run: bundle install
+      
     - name: Run tests
       run: rake test
