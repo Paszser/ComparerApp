@@ -1,6 +1,5 @@
 name: Test
 on: push
-
 jobs:
   tests-github:
     strategy:
@@ -19,6 +18,6 @@ jobs:
 
     - name: Install dependencies
       run: bundle install
-      
+
     - name: Run tests
       run: rake test
