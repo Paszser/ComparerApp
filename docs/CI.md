@@ -54,4 +54,4 @@ A su vez, para el objetivo se requiere el uso de los *Checks* el cual siguiendo 
 
 En adición, me decanté por el uso de Github Actions en específico por un uso reciente en otro proyecto personal lo que me dio confianza para usarlo en esta ocasión.
 
-Otras herramientas abrían sido buenas opciones, véase Travis, Jenkins o Bamboo, pero la afinidad con las herramientas finalmente seleccionadas daba un plus de confianza a la hora de tomar una decisión.
+Otras herramientas habrían sido buenas opciones, véase Travis, Jenkins o Bamboo, pero la afinidad con las herramientas finalmente seleccionadas daba un plus de confianza a la hora de tomar una decisión.
