@@ -10,11 +10,9 @@ Ahora, haremos uso de algunas acciones para poder setear el lenguaje de Ruby con
 
 Usamos *ruby/setup-ruby* como forma provista por Ruby en github para especificar de forma sencilla la versión a usar desarrollado [aquí](https://github.com/ruby/setup-ruby). 
 
-Con la clave *with* indicamos las versiones de ruby con las que realizaremos los test en este caso. Más adelante comentaremos este apartado de las versiones en más detalle [aquí](## Versiones de Ruby).
+Con la clave *with* indicamos las versiones de ruby con las que realizaremos los test en este caso. Más adelante comentaremos este apartado de las versiones en más detalle más adelante.
 
 Finalmente simplemente instalaremos las dependencias que pudieran ser necesarias con *bundle install* y ejecutaremos los tests que deben pasar para que se de el check aprobado por la herramienta.
-
-Estos 
 
 ## Set Up
 
