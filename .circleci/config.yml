@@ -1,5 +1,3 @@
-version: 2
-
 jobs:
   test-app:
     docker:
@@ -11,6 +9,7 @@ jobs:
           command: "rake test"
 
 workflows:
+  version: 2
   test-app-workflow:
     jobs:
       - test-app 
