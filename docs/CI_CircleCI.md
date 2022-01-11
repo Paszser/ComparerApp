@@ -10,7 +10,7 @@ A continuación podremos comprobar como en nuestro PR, un test de CircleCI apare
 
 ## Set Up
 
-Para preparar todo lo relacionado con la herramiento, hemos seguido la documentación que el propio CircleCi proporciona [aquí](https://circleci.com/docs/2.0/), en específico apartados como [este](https://circleci.com/docs/2.0/configuration-reference/) para armar el archivo de configuración y su sintaxis.
+Para preparar todo lo relacionado con la herramiento, hemos seguido la documentación que el propio CircleCi proporciona [aquí](https://circleci.com/docs/2.0/), en específico apartados como [este](https://circleci.com/docs/2.0/configuration-reference/) para armar el archivo de configuración y su sintaxis. Aquí testearemos la versión de ruby que tenemos en el Docker implementada para tener una herramienta de integración continua asociada a dicha versión, que es la establecida (3.1.0)
 
 ## Ventajas
 
