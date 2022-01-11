@@ -1,9 +1,7 @@
-version: 2
-
 jobs:
   test-app:
     machine:
-      - image: ubuntu-2004:202010-01
+      image: ubuntu-2004:202010-01
     steps:
       - checkout
       - run:
