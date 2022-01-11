@@ -2,14 +2,13 @@ version: 2
 
 jobs:
   test-app:
-    docker:
-      - image: paszser/comparerapp:latest
+    machine:
+      - image: ubuntu-2004:202010-01
     steps:
-      - run: apk add --update openssh-client git
       - checkout
       - run:
           name: "Task para app test"
-          command: "rake test"
+          command: "rake docker"
 
 workflows:
   version: 2
