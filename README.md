@@ -114,3 +114,7 @@ Tras crear nuestra cuenta en Dockerhub y crear nuestro repositorio de nombre igu
 Dicho token se ha añadido como secreto de nuestro repositorio como token de acceso, que en consonancia al token de nuestro usuario de dockerhub, serán los dos secretos enlazados a nuestro repositorio de GitHub.
 
 Podemos encontrar [aquí](docs/docker.md) una visión más amplia de algunos conceptos en relación a los contenedores.
+
+## Sistemas de Integración Continua
+
+La información referente a las herramientas usadas las podemos encontrar a partir de [aquí](docs/CI.md), a partir de la cual podremos encontrar el resto de documentación relacionada.

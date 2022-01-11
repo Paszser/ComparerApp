@@ -1,0 +1,16 @@
+jobs:
+
+  test-app:
+    machine:
+      image: ubuntu-2004:202010-01
+    steps:
+      - checkout
+      - run:
+          name: "Task para app test"
+          command: "rake docker"
+
+workflows:
+  version: 2
+  test-app-workflow:
+    jobs:
+      - test-app 

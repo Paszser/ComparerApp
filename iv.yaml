@@ -4,3 +4,4 @@ automatizar:
   fichero: Rakefile
   orden: rake
 test: spec/tienda_web_spec.rb
+CI: .circleci/config.yml

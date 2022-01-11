@@ -15,3 +15,9 @@ task :check do
     puts "Realizando comprobaciones de sintaxis..."
     exec "ruby -c ./lib/*"
 end
+
+desc "Task para lanzar la imagen del docker,"
+task :docker do
+    puts "Lanzando la imagen..."
+    exec "docker run -t -v `pwd`:/app/test paszser/comparerapp"
+end
