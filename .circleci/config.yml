@@ -1,4 +1,5 @@
 jobs:
+
   test-app:
     docker:
       - image: paszser/comparerapp:latest
